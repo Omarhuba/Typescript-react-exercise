@@ -1,4 +1,11 @@
-const TVSchedule = ({ title, children }) => {
+import React from 'react'
+type Title = {
+    title: string | undefined,
+    children: React.ReactNode
+}
+
+
+const TVSchedule = ( {title, children}: Title ) => {
     return <>
         <h1 id="js-title">{title}</h1>
         <div id="js-schedule">
